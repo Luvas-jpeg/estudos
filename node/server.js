@@ -4,7 +4,7 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-const conectionDB = 'mongodb+srv://lvinicios365_db_user:nuzp89RQtgiXmEjn@cluster0.vjemgox.mongodb.net/?appName=Cluster0';
+
 mongoose.connect(conectionDB).then(() => {
     app.emit('pronto')
 }).catch(e => console.log(e))
